@@ -496,9 +496,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 28.16
-  #define DEFAULT_Ki 2.39
-  #define DEFAULT_Kd 83.09
+  #define DEFAULT_Kp 21.50
+  #define DEFAULT_Ki 1.63
+  #define DEFAULT_Kd 70.82
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -998,7 +998,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45.75, -10, -1.25 }
+#define NOZZLE_TO_PROBE_OFFSET { -45.75, -10, -0.915 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
