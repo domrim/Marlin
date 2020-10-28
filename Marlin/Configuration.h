@@ -584,9 +584,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // M303 E0 C10 S240
-    #define DEFAULT_Kp 24.25
-    #define DEFAULT_Ki 2.02
-    #define DEFAULT_Kd 72.93
+    #define DEFAULT_Kp 20.37
+    #define DEFAULT_Ki 1.83
+    #define DEFAULT_Kd 56.62
   #endif
 #endif // PIDTEMP
 
@@ -899,7 +899,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100.5 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95.5 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1151,7 +1151,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43, -13, -3.5 }
+#define NOZZLE_TO_PROBE_OFFSET { -43, -13, -3.95 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1458,7 +1458,7 @@
   // After a runout is detected, continue printing this length of filament
   // before executing the runout script. Useful for a sensor at the end of
   // a feed tube. Requires 4 bytes SRAM per sensor, plus 4 bytes overhead.
-  #define FILAMENT_RUNOUT_DISTANCE_MM 100
+  #define FILAMENT_RUNOUT_DISTANCE_MM 20
 
   #ifdef FILAMENT_RUNOUT_DISTANCE_MM
     // Enable this option to use an encoder disc that toggles the runout pin
